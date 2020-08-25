@@ -1,0 +1,14 @@
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+
+<h2>My Heroes</h2>
+<form>
+    <input type="text" name="item" placeholder="search by name" [(ngModel)]="item" />
+</form>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes | filter:item"  [class.selected]="hero === selectedHero" (click)="onSelect(hero)" >
+    <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </li>
+</ul>
+
+<h4>{{ subtitle }}</h4>
+<button (click) = "fireEvent($event)">click</button>
