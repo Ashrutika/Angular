@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { FilterPipe } from './filter.pipe';
+import { MessagesComponent } from './messages/messages.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { BindingComponent } from './binding/binding.component';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -13,6 +17,9 @@ import { FilterPipe } from './filter.pipe';
     HeroesComponent,
     HeroDetailComponent,
     FilterPipe,
+    MessagesComponent,
+    DashboardComponent,
+    BindingComponent,
   ],
   imports: [
     BrowserModule,

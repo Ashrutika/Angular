@@ -1,14 +1,21 @@
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+<!-- <app-hero-detail [hero]="selectedHero"></app-hero-detail> -->
 
 <h2>My Heroes</h2>
 <form>
-    <input type="text" name="item" placeholder="search by name" [(ngModel)]="item" />
+    <input type="text" [(ngModel)]="item" name="item" placeholder="search by name"/>
 </form>
-<ul class="heroes">
+<!-- <ul class="heroes">
   <li *ngFor="let hero of heroes | filter:item"  [class.selected]="hero === selectedHero" (click)="onSelect(hero)" >
     <span class="badge">{{hero.id}}</span> {{hero.name}}
   </li>
+</ul> -->
+<ul class="heroes">
+  <li *ngFor="let hero of heroes | filter:item">
+    <a routerLink="/detail/{{hero.id}}">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
+  </li>
 </ul>
 
-<h4>{{ subtitle }}</h4>
-<button (click) = "fireEvent($event)">click</button>
+<!-- <h4>{{ subtitle }}</h4>
+<button (click) = "fireEvent($event)">click</button> -->

@@ -1,0 +1,23 @@
+h3{
+  color:#607D8B;
+}
+a{
+  text-decoration: none;
+  color:blue;
+}
+a:hover{
+  color:black;
+}
+.box{
+  border-radius: 3px;
+  box-shadow: 2px 2px 4px gray;
+  padding:10px;
+  margin:10px;
+}
+.box:hover{
+box-shadow: 0.5px 0.5px 2px gray;
+}
+.grid{
+  display: inline-flex;
+  
+}
