@@ -5,9 +5,9 @@ a{
   text-decoration: none;
   color:blue;
 }
-a:hover{
+/* a:hover{
   color:black;
-}
+} */
 .box{
   border-radius: 3px;
   box-shadow: 2px 2px 4px gray;
@@ -15,7 +15,7 @@ a:hover{
   margin:10px;
 }
 .box:hover{
-box-shadow: 0.5px 0.5px 2px gray;
+box-shadow: 0.5px 0.5px 1px gray;
 }
 .grid{
   display: inline-flex;

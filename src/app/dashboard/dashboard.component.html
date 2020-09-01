@@ -1,6 +1,9 @@
 <h3>Top Heroes</h3>
+<form>
+  <input type="text" [(ngModel)]="item" name="item" placeholder="search by name"/>
+</form>
 <div class="grid">
-    <a *ngFor="let hero of heroes"
+    <a *ngFor="let hero of heroes | filter:item"
     routerLink="/detail/{{hero.id}}">
   <div class="box">
     <h4>{{hero.name}}</h4>

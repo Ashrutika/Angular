@@ -1,0 +1,10 @@
+.clear{
+    background-color: #cfd8dc;
+    padding: 5px 10px;
+    color: black;
+    cursor: auto;
+    border: none;
+  }
+  .clear:hover{
+      background-color:#91c4da ;
+  }

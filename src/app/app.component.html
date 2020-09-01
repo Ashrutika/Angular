@@ -1,9 +1,9 @@
 <h1>{{ title }}</h1>
-<!-- <app-binding [subtitle]="subtitle" (onHello)="hello($event)"></app-binding> -->
+<app-binding [subtitle]="subtitle" (onHello)="hello($event)"></app-binding>
 <nav>
-    <a routerLink="/dashboard">Dashboard</a>
-    <a routerLink="/heroes">Heroes</a>
-  </nav>
+    <a routerLink="/dashboard"  routerLinkActive="active-link">Dashboard</a>
+    <a routerLink="/heroes"  routerLinkActive="active-link">Heroes</a>
+</nav>
   <!-- <app-hero-detail [subtitle]="subtitle" (onHello)="hello($event)"></app-hero-detail> -->
 <router-outlet></router-outlet>
 <app-messages></app-messages>
